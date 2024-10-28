@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LuxuryWheels Mk</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css.css" rel="stylesheet">
+    <link rel="icon" href="imagenes/logoo.ico">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Bootstrap Css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amarante&family=Bangers&family=Ewert&family=Jomolhari&family=Noto+Serif+SC:wght@200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+    
+
+    <!-- Bootstrap Iconos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  
+    <!-- Enlace al JavaScript de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</head>
+
+
+
+<body>
+    <div class="contenido"> 
+    
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a style="font-size: 40px; font-family: 'Metal Mania', sans-serif;" class="navbar-brand" href="index.html">
+                    <img src="imagenes/logoo.ico" class="d-inline-block align-text-center" style="width: 40px; height: 40px;">
+                    Luxury<span style="color: blue;">Wheels  MK</span>
+                </a>
+                
+    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    
+                    <div class="navbar-nav ms-auto">
+    
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Soporte
+                                  </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#modalCristiano">Cristiano Ronaldo</a></li>
+                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#modalMessi">Leonel Messi</a></li>
+                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#modalLuis">Luis Diaz</a></li>
+                                    </ul>
+                                </div>
+    
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    <a class="nav-link" href="autos.html">Autos</a>
+                    <a class="nav-link" href="ubicaciones.html">Ubicaciones</a>
+    
+                    </div>
+                </div>
+              </div>
+            
+        </nav>
+    
+    
+    
+    <div class="container">
+    
+    <div class="row">
+
+        <div class="col-4 justify-content-start">
+            <h1 style="font-family: 'Jomolhari', serif;" class="text-uppercase" ><strong>Vehiculos</strong></h1> 
+            <p class="text-uppercase" >+ 20 unidades</p>
+        </div>
+
+        
+        <div class="col-7 d-flex justify-content-end align-items-center">
+
+            <h6 class="mx-2"> Ordenar por: </h6>
+    <select class="form-select custom-select w-50" id="comboBox">
+        <option value="opcion1" selected>Fecha: Mas recientes primero</option>
+        <option value="opcion2">Fecha: Mas antiguos primero</option>
+        <option value="opcion3">Precio: Mas caro primero</option>
+        <option value="opcion4">Precio: Mas bajo primero</option>
+    </select>
+
+        </div>
+    </div>
+    <hr>
+    
+    <div class="row">
+
+        <div class="col-12">
+            <h3 style="font-family: 'Jomolhari', serif;"><strong>Busqueda</strong></h3>
+            <select class="form-select custom-select w-100 my-1" id="comboBox">
+                <option value="opcion1" selected>Marca</option>
+                <option value="opcion2">Ford</option>
+                <option value="opcion3">Buggati</option>
+                <option value="opcion4">Toyota</option>
+                <option value="opcion4">BMW</option>
+                <option value="opcion4">Ferrari</option>
+                <option value="opcion4">Lamborghini</option>
+            </select>
+
+            <select class="form-select custom-select w-100 my-1" id="comboBox">
+                <option value="opcion1" selected>Modelo</option>
+                <option value="opcion2">2026</option>
+                <option value="opcion2">2025</option>
+                <option value="opcion3">2023</option>
+                <option value="opcion4">2020</option>
+                <option value="opcion4">antes 2020</option>
+            </select>
+
+            <select class="form-select custom-select w-100 my-1" id="comboBox">
+                <option value="opcion1" selected>Combustible</option>
+                <option value="opcion2">Gasolina</option>
+                <option value="opcion2">Diesel</option>
+                <option value="opcion3">Electrico</option>
+                <option value="opcion4">Hibrido</option>
+            </select>
+
+            <select class="form-select custom-select w-100 my-1" id="comboBox">
+                <option value="opcion1" selected>Top speed</option>
+                <option value="opcion2">150km/h a 190km/h</option>
+                <option value="opcion2">190km/h a 230km/h</option>
+                <option value="opcion3">250km/h a 320km/h</option>
+                <option value="opcion4">320km/h a 450km/h</option>
+            </select>
+
+        </div>
+
+    </div>
+</div>
+    
+    
+
+
+
+    
+
+<div class="container-fluid">
+      
+    
+
+
+
+
+
+<div>
+    <div class="row">
+                        
+
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+
+    <div class="card card-text mt-3" >
+
+            <div class="card-header">
+                <h3 style="font-family: 'Jomolhari', serif;" class="text-center "><strong> Mustan GT </strong></h3>
+            </div>
+        <div class="card-body">
+            <img class="card-img" src="imagenes/17.jpg" alt="mustang">
+            <h5 class="mt-3">Precio : 120'000,000 </h5>
+            <hr>
+            <h6 class="text-center" ><i class="bi bi-tags"></i> 2024/ <i class="bi bi-fuel-pump"></i> 20L/ <i class="bi bi-speedometer2"></i> 230k/h </h6>
+            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#modalMustangGT" >Comprar</button>
+        </div>
+    </div>
+
+        </div>
+
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+
+            <div class="card card-text mt-3" >
+        
+                    <div class="card-header">
+                        <h3 style="font-family: 'Jomolhari', serif;" class="text-center "><strong> Buggati chiron </strong></h3>
+                    </div>
+                <div class="card-body">
+                    <img class="card-img" src="imagenes/18.jpg" alt="Bugattichiron" >
+                    <h5 class= "mt-3">Precio : 1,280'000,000 </h5>
+                    <hr>
+                    <h6 class="text-center" ><i class="bi bi-tags"></i> 2024/ <i class="bi bi-fuel-pump"></i> 40.2L/ <i class="bi bi-speedometer2"></i> 415k/h </h6>
+                    <button class="btn btn-primary w-100">Comprar</button>
+                </div>
+            </div>
+        
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+
+                    <div class="card card-text mt-3" >
+                
+                            <div class="card-header">
+                                <h3 style="font-family: 'Jomolhari', serif;" class="text-center "><strong> Camaro ZL1 </strong></h3>
+                            </div>
+                        <div class="card-body">
+                            <img class="card-img" src="imagenes/19.jpg" alt="Camaro" >
+                            <h5 class= "mt-3">Precio : 450'000,000 </h5>
+                            <hr>
+                            <h6 class="text-center" ><i class="bi bi-tags"></i> 2025/ <i class="bi bi-fuel-pump"></i> 30.7L/ <i class="bi bi-speedometer2"></i> 215k/h </h6>
+                            <button class="btn btn-primary w-100">Comprar</button>
+                        </div>
+                    </div>
+                
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+
+                    <div class="card card-text mt-3" >
+                
+                            <div class="card-header">
+                                <h3 style="font-family: 'Jomolhari', serif;" class="text-center "><strong> Toyota TXL 4x4 </strong></h3>
+                            </div>
+                        <div class="card-body">
+                            <img class="card-img" src="imagenes/20.jpeg" alt="Txl" >
+                            <h5 class= "mt-3">Precio : 230'000,000 </h5>
+                            <hr>
+                            <h6 class="text-center" ><i class="bi bi-tags"></i> 2026/ <i class="bi bi-fuel-pump"></i> 50.2L/ <i class="bi bi-speedometer2"></i> 195k/h </h6>
+                            <button class="btn btn-primary w-100">Comprar</button>
+                        </div>
+                    </div>
+                
+        </div>
+        
+
+
+
+    </div>
+
+    <div class="row">
+                        
+
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+
+    <div class="card card-text mt-3" >
+
+            <div class="card-header">
+                <h3 style="font-family: 'Jomolhari', serif;" class="text-center "><strong> Mustan GT </strong></h3>
+            </div>
+        <div class="card-body">
+            <img class="card-img" src="imagenes/17.jpg" alt="mustang">
+            <h5 class="mt-3">Precio : 120'000,000 </h5>
+            <hr>
+            <h6 class="text-center" ><i class="bi bi-tags"></i> 2024/ <i class="bi bi-fuel-pump"></i> 20L/ <i class="bi bi-speedometer2"></i> 230k/h </h6>
+            <button class="btn btn-primary w-100">Comprar</button>
+        </div>
+    </div>
+
+        </div>
+
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+
+            <div class="card card-text mt-3" >
+        
+                    <div class="card-header">
+                        <h3 style="font-family: 'Jomolhari', serif;" class="text-center "><strong> Buggati chiron </strong></h3>
+                    </div>
+                <div class="card-body">
+                    <img class="card-img" src="imagenes/18.jpg" alt="Bugattichiron" >
+                    <h5 class= "mt-3">Precio : 1,280'000,000 </h5>
+                    <hr>
+                    <h6 class="text-center" ><i class="bi bi-tags"></i> 2024/ <i class="bi bi-fuel-pump"></i> 40.2L/ <i class="bi bi-speedometer2"></i> 415k/h </h6>
+                    <button class="btn btn-primary w-100">Comprar</button>
+                </div>
+            </div>
+        
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+
+                    <div class="card card-text mt-3" >
+                
+                            <div class="card-header">
+                                <h3 style="font-family: 'Jomolhari', serif;" class="text-center "><strong> Camaro ZL1 </strong></h3>
+                            </div>
+                        <div class="card-body">
+                            <img class="card-img" src="imagenes/19.jpg" alt="Camaro" >
+                            <h5 class= "mt-3">Precio : 450'000,000 </h5>
+                            <hr>
+                            <h6 class="text-center" ><i class="bi bi-tags"></i> 2025/ <i class="bi bi-fuel-pump"></i> 30.7L/ <i class="bi bi-speedometer2"></i> 215k/h </h6>
+                            <button class="btn btn-primary w-100">Comprar</button>
+                        </div>
+                    </div>
+                
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+
+                    <div class="card card-text mt-3" >
+                
+                            <div class="card-header">
+                                <h3 style="font-family: 'Jomolhari', serif;" class="text-center "><strong> Toyota TXL 4x4 </strong></h3>
+                            </div>
+                        <div class="card-body">
+                            <img class="card-img" src="imagenes/20.jpeg" alt="Txl" >
+                            <h5 class= "mt-3">Precio : 230'000,000 </h5>
+                            <hr>
+                            <h6 class="text-center" ><i class="bi bi-tags"></i> 2026/ <i class="bi bi-fuel-pump"></i> 50.2L/ <i class="bi bi-speedometer2"></i> 195k/h </h6>
+                            <button class="btn btn-primary w-100">Comprar</button>
+                        </div>
+                    </div>
+                
+        </div>
+        
+
+
+
+    </div>
+
+    <div class="row">
+                        
+
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+
+    <div class="card card-text mt-3" >
+
+            <div class="card-header">
+                <h3 style="font-family: 'Jomolhari', serif;" class="text-center "><strong> Mustan GT </strong></h3>
+            </div>
+        <div class="card-body">
+            <img class="card-img" src="imagenes/17.jpg" alt="mustang">
+            <h5 class="mt-3">Precio : 120'000,000 </h5>
+            <hr>
+            <h6 class="text-center" ><i class="bi bi-tags"></i> 2024/ <i class="bi bi-fuel-pump"></i> 20L/ <i class="bi bi-speedometer2"></i> 230k/h </h6>
+            <button class="btn btn-primary w-100">Comprar</button>
+        </div>
+    </div>
+
+        </div>
+
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+
+            <div class="card card-text mt-3" >
+        
+                    <div class="card-header">
+                        <h3 style="font-family: 'Jomolhari', serif;" class="text-center "><strong> Buggati chiron </strong></h3>
+                    </div>
+                <div class="card-body">
+                    <img class="card-img" src="imagenes/18.jpg" alt="Bugattichiron" >
+                    <h5 class= "mt-3">Precio : 1,280'000,000 </h5>
+                    <hr>
+                    <h6 class="text-center" ><i class="bi bi-tags"></i> 2024/ <i class="bi bi-fuel-pump"></i> 40.2L/ <i class="bi bi-speedometer2"></i> 415k/h </h6>
+                    <button class="btn btn-primary w-100">Comprar</button>
+                </div>
+            </div>
+        
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+
+                    <div class="card card-text mt-3" >
+                
+                            <div class="card-header">
+                                <h3 style="font-family: 'Jomolhari', serif;" class="text-center "><strong> Camaro ZL1 </strong></h3>
+                            </div>
+                        <div class="card-body">
+                            <img class="card-img" src="imagenes/19.jpg" alt="Camaro" >
+                            <h5 class= "mt-3">Precio : 450'000,000 </h5>
+                            <hr>
+                            <h6 class="text-center" ><i class="bi bi-tags"></i> 2025/ <i class="bi bi-fuel-pump"></i> 30.7L/ <i class="bi bi-speedometer2"></i> 215k/h </h6>
+                            <button class="btn btn-primary w-100">Comprar</button>
+                        </div>
+                    </div>
+                
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+
+                    <div class="card card-text mt-3" >
+                
+                            <div class="card-header">
+                                <h3 style="font-family: 'Jomolhari', serif;" class="text-center "><strong> Toyota TXL 4x4 </strong></h3>
+                            </div>
+                        <div class="card-body">
+                            <img class="card-img" src="imagenes/20.jpeg" alt="Txl" >
+                            <h5 class= "mt-3">Precio : 230'000,000 </h5>
+                            <hr>
+                            <h6 class="text-center" ><i class="bi bi-tags"></i> 2026/ <i class="bi bi-fuel-pump"></i> 50.2L/ <i class="bi bi-speedometer2"></i> 195k/h </h6>
+                            <button class="btn btn-primary w-100">Comprar</button>
+                        </div>
+                    </div>
+                
+        </div>
+        
+
+
+
+    </div>
+
+    <div class="row">
+                        
+
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+
+    <div class="card card-text mt-3" >
+
+            <div class="card-header">
+                <h3 style="font-family: 'Jomolhari', serif;" class="text-center "><strong> Mustan GT </strong></h3>
+            </div>
+        <div class="card-body">
+            <img class="card-img" src="imagenes/17.jpg" alt="mustang">
+            <h5 class="mt-3">Precio : 120'000,000 </h5>
+            <hr>
+            <h6 class="text-center" ><i class="bi bi-tags"></i> 2024/ <i class="bi bi-fuel-pump"></i> 20L/ <i class="bi bi-speedometer2"></i> 230k/h </h6>
+            <button class="btn btn-primary w-100">Comprar</button>
+        </div>
+    </div>
+
+        </div>
+
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+
+            <div class="card card-text mt-3" >
+        
+                    <div class="card-header">
+                        <h3 style="font-family: 'Jomolhari', serif;" class="text-center "><strong> Buggati chiron </strong></h3>
+                    </div>
+                <div class="card-body">
+                    <img class="card-img" src="imagenes/18.jpg" alt="Bugattichiron" >
+                    <h5 class= "mt-3">Precio : 1,280'000,000 </h5>
+                    <hr>
+                    <h6 class="text-center" ><i class="bi bi-tags"></i> 2024/ <i class="bi bi-fuel-pump"></i> 40.2L/ <i class="bi bi-speedometer2"></i> 415k/h </h6>
+                    <button class="btn btn-primary w-100">Comprar</button>
+                </div>
+            </div>
+        
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+
+                    <div class="card card-text mt-3" >
+                
+                            <div class="card-header">
+                                <h3 style="font-family: 'Jomolhari', serif;" class="text-center "><strong> Camaro ZL1 </strong></h3>
+                            </div>
+                        <div class="card-body">
+                            <img class="card-img" src="imagenes/19.jpg" alt="Camaro" >
+                            <h5 class= "mt-3">Precio : 450'000,000 </h5>
+                            <hr>
+                            <h6 class="text-center" ><i class="bi bi-tags"></i> 2025/ <i class="bi bi-fuel-pump"></i> 30.7L/ <i class="bi bi-speedometer2"></i> 215k/h </h6>
+                            <button class="btn btn-primary w-100">Comprar</button>
+                        </div>
+                    </div>
+                
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+
+                    <div class="card card-text mt-3" >
+                
+                            <div class="card-header">
+                                <h3 style="font-family: 'Jomolhari', serif;" class="text-center "><strong> Toyota TXL 4x4 </strong></h3>
+                            </div>
+                        <div class="card-body">
+                            <img class="card-img" src="imagenes/20.jpeg" alt="Txl" >
+                            <h5 class= "mt-3">Precio : 230'000,000 </h5>
+                            <hr>
+                            <h6 class="text-center" ><i class="bi bi-tags"></i> 2026/ <i class="bi bi-fuel-pump"></i> 50.2L/ <i class="bi bi-speedometer2"></i> 195k/h </h6>
+                            <button class="btn btn-primary w-100">Comprar</button>
+                        </div>
+                    </div>
+                
+        </div>
+        
+
+
+
+    </div>
+
+    <div class="row">
+                        
+
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+
+    <div class="card card-text mt-3" >
+
+            <div class="card-header">
+                <h3 style="font-family: 'Jomolhari', serif;" class="text-center "><strong> Mustan GT </strong></h3>
+            </div>
+        <div class="card-body">
+            <img class="card-img" src="imagenes/17.jpg" alt="mustang">
+            <h5 class="mt-3">Precio : 120'000,000 </h5>
+            <hr>
+            <h6 class="text-center" ><i class="bi bi-tags"></i> 2024/ <i class="bi bi-fuel-pump"></i> 20L/ <i class="bi bi-speedometer2"></i> 230k/h </h6>
+            <button class="btn btn-primary w-100">Comprar</button>
+        </div>
+    </div>
+
+        </div>
+
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+
+            <div class="card card-text mt-3" >
+        
+                    <div class="card-header">
+                        <h3 style="font-family: 'Jomolhari', serif;" class="text-center "><strong> Buggati chiron </strong></h3>
+                    </div>
+                <div class="card-body">
+                    <img class="card-img" src="imagenes/18.jpg" alt="Bugattichiron" >
+                    <h5 class= "mt-3">Precio : 1,280'000,000 </h5>
+                    <hr>
+                    <h6 class="text-center" ><i class="bi bi-tags"></i> 2024/ <i class="bi bi-fuel-pump"></i> 40.2L/ <i class="bi bi-speedometer2"></i> 415k/h </h6>
+                    <button class="btn btn-primary w-100">Comprar</button>
+                </div>
+            </div>
+        
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+
+                    <div class="card card-text mt-3" >
+                
+                            <div class="card-header">
+                                <h3 style="font-family: 'Jomolhari', serif;" class="text-center "><strong> Camaro ZL1 </strong></h3>
+                            </div>
+                        <div class="card-body">
+                            <img class="card-img" src="imagenes/19.jpg" alt="Camaro" >
+                            <h5 class= "mt-3">Precio : 450'000,000 </h5>
+                            <hr>
+                            <h6 class="text-center" ><i class="bi bi-tags"></i> 2025/ <i class="bi bi-fuel-pump"></i> 30.7L/ <i class="bi bi-speedometer2"></i> 215k/h </h6>
+                            <button class="btn btn-primary w-100">Comprar</button>
+                        </div>
+                    </div>
+                
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+
+                    <div class="card card-text mt-3" >
+                
+                            <div class="card-header">
+                                <h3 style="font-family: 'Jomolhari', serif;" class="text-center "><strong> Toyota TXL 4x4 </strong></h3>
+                            </div>
+                        <div class="card-body">
+                            <img class="card-img" src="imagenes/20.jpeg" alt="Txl" >
+                            <h5 class= "mt-3">Precio : 230'000,000 </h5>
+                            <hr>
+                            <h6 class="text-center" ><i class="bi bi-tags"></i> 2026/ <i class="bi bi-fuel-pump"></i> 50.2L/ <i class="bi bi-speedometer2"></i> 195k/h </h6>
+                            <button class="btn btn-primary w-100">Comprar</button>
+                        </div>
+                    </div>
+                
+        </div>
+        
+
+
+
+    </div>
+</div>
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+       
+    <!-- Modal 1: Cristiano Ronaldo -->
+<div class="modal fade" id="modalCristiano" tabindex="-1" aria-labelledby="modalMessiLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalMessiLabel">Chat con Asesor Cristiano Ronaldo</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Cristiano Ronaldo</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>Hola, soy el BICHO y vi que necesitas orientacion en la pagina. 
+                        En que puedo ayudarte?</p>
+                        <input type="text" class="form-control" placeholder="Escribe tu mensaje..." aria-label="Mensaje">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Enviar mensaje</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 2: Leonel Messi -->
+<div class="modal fade" id="modalMessi" tabindex="-1" aria-labelledby="modalMessiLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalMessiLabel">Chat con Asesor Leonel Messi</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Leonel Messi</h5>
+                    </div>
+                    <div class="card-body">
+                        
+                        <p>Hola, soy Leo Messi y vi que necesitas orientacion en la pagina. 
+                        En que puedo ayudarte?</p>
+                        
+                        <input type="text" class="form-control" placeholder="Escribe tu mensaje..." aria-label="Mensaje">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Enviar mensaje</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 3: Luis fiaz -->
+<div class="modal fade" id="modalLuis" tabindex="-1" aria-labelledby="modalMessiLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalMessiLabel">Chat con Asesor Luis Diaz</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Luis Diaz</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>Hola, soy Luis Diaz y vi que necesitas orientacion en la pagina. 
+                        En que puedo ayudarte?</p>
+                        <input type="text" class="form-control" placeholder="Escribe tu mensaje..." aria-label="Mensaje">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Enviar mensaje</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+<!-- Mustang GT -->
+<div class="modal fade" id="modalMustangGT" tabindex="-1" aria-labelledby="modalMustangGTlabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalMustangGTlabel">Mas detalles del Mustang GT</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Mustang GT 2025</h3>
+                    </div>
+                    <div class="card-body">
+                        <h4><strong>Mas fotos</strong></h4>
+                        <img class="img-fluid pb-3" style="border-radius: 15px;" src="imagenes/24.jpg" alt="foto1">
+                        <img class="img-fluid pb-3" style="border-radius: 15px;" src="imagenes/17.jpg" alt="foto2">
+                        <img class="img-fluid pb-3" style="border-radius: 15px;" src="imagenes/23.jpg" alt="foto3">
+
+                        <h4><strong>Modelo y tecnologia</strong></h4>
+                        <p>El Mustang GT 2025 cuenta con sensores, pantallas y hasta botones digitales
+                            para mejoramiento de fallas mecanicas y facilidad de uso, pantalla digital amoled,
+                            velocimetro digital XTEM, sonido estereo X4W. 
+                        </p>
+
+                        <h4><strong>Capacidad</strong></h4>
+                        <p>Este grandioso auto tiene una economia de 200km por tanqueada full de 20litros de gasolina</p>
+
+                        <h4><strong>Velocidad</strong></h4>
+                        <p>Tiene la capacidad de superar facilmente los 250km/h en 10s pero se recomiendo no 
+                            sobrepasar 250km/h ya que el auto apesar de ser potente no esta diseñado para velocidades
+                            mas extremas a 250km/h. tiene un torque de 80N/M
+                        </p>
+
+                        <h4><strong>Precio</strong></h4>
+                        <p>El Mustang GT con sus nuevas tecnologias digitales en todos los sensores y botones
+                            con su capacidad de torque sorprendente y su economia muy beneficiosa para el tipo 
+                            de auto que es tiene un Precio de <strong>  130'000,000 COP </strong>completo con todos los papeles y todo listo
+                            para ponerlo a nombre de dueño y sacarlo a a andar a 230km/h
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="row w-100">
+                    <div class="col-6">
+                <button type="button"  class="btn btn-secondary w-100" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                    <div class="col-6">
+                <button type="button"  class="btn btn-primary w-100">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+    
+
+
+
+
+
+<div class="foote">
+<footer class="bg-dark text-white mt-5 mb-0 pt-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h2 style="font-family: 'Jomolhari', serif;"><strong>Sobre nosotros</strong></h2>
+          <p>
+            Somos una tienda dedicada a ofrecer los mejores productos. Nuestro compromiso es la satisfacción del cliente.
+          </p>
+        </div>
+        <div class="col-md-4">
+            <h2 style="font-family: 'Jomolhari', serif;"><strong>Enlaces utiles</strong></h2>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Inicio</a></li>
+            <li><a href="#" class="text-white">Productos</a></li>
+            <li><a href="#" class="text-white">Contacto</a></li>
+            <li><a href="#" class="text-white">Política de privacidad</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+            <h2 style="font-family: 'Jomolhari', serif;"><strong>Contacto</strong></h2>
+          <p>
+            Email: Marlon.kerguelen@cecar.edu.co<br>
+            Teléfono: (57) 321-123-4321
+          </p>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <p>&copy; 2024 Jm Store. Todos los derechos reservados.</p>
+      </div>
+    </div>
+
+  </footer>
+</div>
+
+</body>
